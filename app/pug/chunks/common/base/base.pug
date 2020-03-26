@@ -1,0 +1,28 @@
+block variables
+    - var pageTitle = '';
+
+doctype html
+html(lang='ru')
+    head
+        include ../head.pug
+
+-
+    var resourcesPath = ''
+    var imagesPath = resourcesPath + 'assets/templates/default/img'
+    var iconsPath = resourcesPath + 'icons/'
+
+include ../functions/functions
+
+block components
+    include ../mixins/all
+
+body
+    include ../layout/header
+
+    <!--================ Main Content Area Start =================-->
+    main
+        block mainContent
+    <!--================ Main Content Area End =================-->
+
+    include ../layout/footer
+    include ../libs/libs

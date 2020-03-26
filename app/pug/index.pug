@@ -1,0 +1,70 @@
+extends chunks/common/base/base
+
+block variables
+    - var pageTitle = 'Home Page'
+
+block mainContent
+    .content
+        <!--================ Carousel Area Start =================-->
+        section.carousel__section.mb-60
+            include chunks/common/components/carousel
+        <!--================ Carousel Area End =================-->
+
+        <!--================ Accessories Service Area Start =================-->
+        section.accessories__service.mb-70
+            .content
+                .row
+                    .col-md-12
+                        h2.page-title.text-up.text-center.fw-300.mb-40 ПРЕИМУЩЕСТВА СЕРВИСА
+                    .col-md-3.col-sm-6
+                        .service__col
+                            .service__col__img
+                                img( src=getImage('/serviceCircles/ellipse1.png'))
+                            h4.service__col__text.text-center.fw-300.mt-30  Бесплатная доставка по Санкт-Петербургу в пределах КАД
+
+                    .col-md-3.col-sm-6
+                        .service__col
+                            .service__col__img
+                                img( src=getImage('/serviceCircles/ellipse2.png'))
+                            h4.service__col__text.text-center.fw-300.mt-30 Официальная гарантия от производителя до 2-х лет
+
+                    .col-md-3.col-sm-6
+                        .service__col
+                            .service__col__img
+                                img( src=getImage('/serviceCircles/ellipse3.png'))
+                            h4.service__col__text.text-center.fw-300.mt-30 Действует программа trade-in
+
+                    .col-md-3.col-sm-6
+                        .service__col
+                            .service__col__img
+                                img( src=getImage('/serviceCircles/ellipse4.png'))
+                            h4.service__col__text.text-center.fw-300.mt-30 Все запчасти в наличии
+
+
+        <!--================ Accessories Service Area End =================-->
+
+        <!--================ Choose Type Area Start =================-->
+        section.choose_model
+            .row
+                .col-md-12
+                    h2.text-center.fw-300.mb-40 Выберите тип техники для ремонта
+                include chunks/common/components/select-repair_technique
+        <!--================ Choose Type Area End =================-->
+
+        <!--================ About Service Area Start =================-->
+        section.about_service.mb-70
+            +text-wrap('Официальный сервисный центр LG',
+            'Официальный сервисный центр LG — это быстрое обнаружение и гарантированное устранение неполадок вашей техники, сопровождающееся качественным сервисом. Наши мастера имеют большой опыт работы, они постоянно проходят обучение и совершенствуются в сфере сервисного ремонта техники. Доверив нам свои гаджеты, Вы не ошибетесь в выборе.',
+            '', 'Ознакомиться подробнее')
+        <!--================ About Service Area End =================-->
+
+        <!--================ Reviews Area Start =================-->
+        section.reviews_section.mb-80
+            .content
+                .row
+                    .col-md-12
+                        h2.page-title.text-center.fw-300.mb-40 Отзывы о сервисном центре
+                        include chunks/common/components/reviews
+        <!--================ Reviews Area End =================-->
+
+        include chunks/common/components/repeating-sectons

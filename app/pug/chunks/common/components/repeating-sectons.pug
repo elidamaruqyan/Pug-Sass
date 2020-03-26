@@ -1,0 +1,37 @@
+<!--================ Why Choose Us Area Start =================-->
+-
+    var mainReasons = [
+        { title: "Без рисков",desc: "Официальная гарантия от производителя до 2-х лет"},
+        { title: "Без задержек", desc: "80% ремонтов выполняем в течение 1.5 часов"},
+        { title: "Без наценок", desc: "Запчасти - по себестоймости, курьер - бесплатно"},
+        { title: "Без ожиданий", desc: "Все запчасти - в наличии на собственном скалдея",imgSrc: "./assets/templates/default/img/icons/icons3.png" }
+    ]
+
+section.choose__us.pt-75
+    .content
+        .row
+            .col-md-12
+                h2.page-title.text-center.fw-600.mb-50 Почему наш сервисный центр?
+            each reason, index in mainReasons
+                .col-md-3.col-sm-6
+                    .card__icon__box.card__box
+                        .card__icon__box__circle
+                            img( src=getImage("/icons/icons" + index +".png"))
+                        .card__box__text.p-0
+                            h2.text-center.fw-600=reason.title
+                            p.text-center.fw-300=reason.desc
+            .card__btn
+                button Ознакомиться подробнее
+<!--================ Why Choose Us Area End =================-->
+
+<!--================ Warranty Area Start =================-->
+section.warranty__section
+    .box
+        .flex-item
+            .warranty__section__img.text-right
+                img(src=getImage("/warranty_mock.png"))
+        .flex-item
+            .warranty__section__text.pt-100
+                h3.page-title.text-left.fw-400.mb-20 Гарантия до 12 месяцев на ремонт и запчасти
+                p.fw-300 Наш официальный сервисный центр единственный предоставляет гарантию на ремонт до 12 месяцев. Вы можете быть спокойны за свою технику,ремонтируя её у нас!
+<!--================ Warranty Area End =================-->

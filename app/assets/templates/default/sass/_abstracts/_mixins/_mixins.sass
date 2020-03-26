@@ -1,0 +1,91 @@
+/* Center Block Element */
+@mixin push--auto($marginTB)
+  margin: $marginTB auto
+
+/*Box-Sizing*/
+@mixin box-sizing($type)
+  -webkit-box-sizing: $type
+  -moz-box-sizing: $type
+  box-sizing: $type
+
+/* Pseudo */
+@mixin pseudo($display: block, $pos: absolute, $content: '')
+  content: $content
+  display: $display
+  position: $pos
+
+/* Input Placeholder */
+@mixin input-placeholder
+  &.placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+  &::-webkit-input-placeholder
+    @content
+
+/* Transition, Smooth Transition */
+@mixin transit($what: all, $when: 0.25s, $how: ease)
+  -webkit-transition: $what $when $how
+  -moz-transition: $what $when $how
+  -ms-transition: $what $when $how
+  -o-transition: $what $when $how
+  transition: $what $when $how
+
+/*	Media Query Mixin */
+$breakpoints: "phone" 400px, "phone-wide" 480px, "phablet" 560px, "tablet-small" 640px, "tablet" 768px, "tablet-wide" 1024px, "desktop" 1248px, "desktop-wide" 1440px
+
+@mixin mq($width, $type: min)
+  @if map_has_key($breakpoints, $width)
+    $width: map_get($breakpoints, $width)
+    @if $type == max
+      $width: $width - 1px
+
+    @media only screen and (#{$type}-width: $width)
+      @content
+
+/*  Truncate */
+@mixin truncate($truncation-boundary)
+  max-width: $truncation-boundary
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+/*Controlling opacity */
+@mixin alpha-attribute($attribute, $color, $background)
+  $percent: alpha($color) * 100%
+  $opaque: opacify($color, 1)
+  $solid-color: mix($opaque, $background, $percent)
+  #{$attribute}: $solid-color
+  #{$attribute}: $color
+
+/* Centering Positioned Elements*/
+@mixin center
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+/* Background Image Mixins*/
+@mixin background($imgpath,$position:0 0,$repeat: no-repeat, $size: cover )
+  background:
+    image: url($imgpath)
+    position: $position
+    repeat: $repeat
+    size: $size
+
+/* Circle*/
+@mixin circle($width, $borderWidth, $borderColor)
+  @include flexContainer(flex, center, center, row, nowrap)
+  width: $width
+  height: $width
+  border: $borderWidth solid $borderColor
+  -webkit-border-radius: $width/2
+  -moz-border-radius: $width/2
+  border-radius: $width/2
+
+
+

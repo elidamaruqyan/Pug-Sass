@@ -1,0 +1,66 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html, body
+  min-width: 320px
+  margin: 0
+  padding: 0
+  font-size: #{$font-size}px
+  font-family: $default-font
+  overflow: auto
+  overflow-x: hidden
+  @include box-sizing(border-box)
+
+h1, h2, h3, h4, h5, h6, p, span
+  margin: 0
+
+b, strong
+  font-weight: bold
+
+p
+  margin: 0
+  padding: 0
+
+a
+  text-decoration: none
+
+  &:hover
+    text-decoration: none
+    *
+      text-decoration: none
+
+input, button
+  &:focus
+    outline: none
+    box-shadow: none
+
+  &:hover
+    outline: none
+    box-shadow: none
+
+img
+  width: 100%
+  height: 100%
+  object-fit: contain
+
+ul
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+
+::placeholder
+  color: #666
+
+::selection
+  background-color: $accent
+  color: #fff
+
+.captcha-item
+  transform: scale(0.75)
+  transform-origin: left top
+
+
+

@@ -1,0 +1,39 @@
+extends chunks/common/base/base
+
+block variables
+    - var pageTitle = 'Стиральные машины'
+
+block mainContent
+    .content
+        <!--================ Filters Area Start =================-->
+        section.filters__wrapper.mb-20
+            .wrapper__content
+                .row
+                    .col-md-12
+                        h2.text-center.fw-300.mt-50 Стиральные машины
+                        p.text-center.fw-300.mb-30 Выберите неисправность, которую нужно устранить
+                        div.button__wrapper
+                            button.outline Выбрать по модели
+                            button.outline Выбрать по неисправности
+                            button.outline Быстрая консультация
+                    include chunks/common/components/filters
+
+        <!--================ Filters Area End =================-->
+
+        include chunks/common/components/help
+
+        <!--================ Select Series Area Start =================-->
+        section.select__series.bg-light-gray.mb-60.pt-60.pb-70
+            .wrapper__content
+                h2.text-center.fw-300.pb-40 Выберите серию
+                include chunks/common/components/select-series
+        <!--================ Select Series Area End =================-->
+
+        <!--================ Select Model Area Start =================-->
+        section.select__model.pb-40
+            .wrapper__content
+                h2.text-center.fw-300.pb-20 Выберите модель
+                include chunks/common/components/select-model
+        <!--================ Select Model Area End =================-->
+
+        include chunks/common/components/repeating-sectons

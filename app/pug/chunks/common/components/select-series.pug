@@ -1,0 +1,10 @@
+.row
+    - var i = 0;
+        while i <= 6
+            -i++;
+            .col-md-3.col-sm-6.col-xs-12.p-0
+                .series__block
+                    .series__block__img
+                        img(src=getImage("/model.png", alt=""))
+                    .series__block__text.bg-white
+                        p.text-center.fw-300 Стиральные машины с двойной разгрузкой

@@ -1,0 +1,12 @@
+.row
+    - var i = 0;
+    while i <= 6
+        -i++;
+        .col-sm-6.col-md-3.col-xl-3
+            .specialists__wrapper.text-left.mb-40
+                .specialists__wrapper__img.mb-20
+                    img(src=getImage("/specialist.png", alt="Specialist Pic"))
+                .specialists__wrapper__desc
+                    h5.position.fw-300 Менеджер
+                    h6.name.fw-600.mb-10 Дмитрий Райзе
+                    p.description.fw-300 Опыт-5 лет. Найдет подход к любому клиенту

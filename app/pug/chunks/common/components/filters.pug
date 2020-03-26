@@ -1,0 +1,13 @@
+-var modelFilters = [{ title: "Не греет воду",price: "от 600 рублей", icon: getImage("/icons/icons1.png")},{title: "Не сливает воду",price: "Guy Fake",icon: getImage("/icons/icons2.png")}]
+- var n = 0;
+
+while n < 4
+    -n++
+    each filter in modelFilters
+        .col-md-3
+            .filters__item
+                .filters__item__circle
+                    img(src=filter.icon)
+                .filters__item__text
+                    p.fw-400= filter.title
+                    span.fw-300= filter.price

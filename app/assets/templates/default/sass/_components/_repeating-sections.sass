@@ -1,0 +1,64 @@
+section
+  &.choose__us
+    min-height: 990px
+    @include flexContainer(flex, center, flex-start, row, nowrap)
+    @include background("../img/whyMe.png")
+    background-position: bottom
+
+    .content
+      width: calc(100% - 420px)
+
+      .page-title
+        font-size: 27px
+        margin-bottom: 57px
+
+    .card__icon__box
+      border: none
+
+      &__circle
+        @include circle(70px, 4px, $pink)
+        margin: 0 auto 15px
+        padding: 15px
+
+      .card__box__text
+        h2
+          font-size: 20px
+        p
+          width: 86%
+          font-size: 16px
+          @include push--auto(7px)
+
+    .card__btn
+      @include push--auto(45px)
+
+      button
+        padding: 0 15px
+        font-size: 16px
+
+  &.warranty__section
+    position: relative
+    background: #DFE5EC
+    overflow: hidden
+
+    .box
+      align-items: flex-start
+
+    .warranty__section
+      &__img
+        @include background("../img/warrantyBg.png")
+        background-position: -2px -30px
+        padding-top: 78px
+
+        img
+          width: 83%
+          margin-right: -72px
+
+      &__text
+        width: 82%
+        color: $main-color
+        padding: 84px 0 0 118px
+
+        p
+          font-weight: 300
+          font-size: $font-size-small
+          line-height: 30px

@@ -1,0 +1,10 @@
+.row
+    - var i = 0;
+    while i <= 8
+        -i++;
+        .col-sm-6.col-md-4.col-xl-2
+            .choose__model.text-center.mb-60
+                a(href="single.html")
+                    img(src=getImage("/items/pic.png") alt="selected model")
+                    h4.choose__model__title.text-up.mt-20.mb-20 F1296WDS0
+                    button.choose__model__btn Выбрать

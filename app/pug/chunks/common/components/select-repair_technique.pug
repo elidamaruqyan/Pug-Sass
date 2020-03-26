@@ -1,0 +1,9 @@
+- var details = [{"size": "col-md-8"}, { "size": "col-md-4"}, { "size": "col-md-4"}, { "size": "col-md-8"}]
+
+each detail, index in details
+    .col-sm-6.col-xs-12.mb-30(class=detail.size 'islandology-item'=index)
+        div.card__wrapper
+            a(href="product-single.html")
+                img(src=getImage("/techniquesType/smartphones.png"))
+                div.card__wrapper__text.bg-gray.pl-50
+                    p.fw-300.m-0 Смартфоны

@@ -1,0 +1,106 @@
+section
+  .owl-nav, .owl-dots
+    position: absolute
+    top: 20px
+
+  .owl-nav
+    width: 100%
+    display: flex
+    justify-content: space-between
+    @include center
+
+    button
+      width: auto
+
+    img
+      width: auto
+      height: auto
+      min-height: auto
+
+  &.carousel__section
+    margin-top: -38px
+
+    .input-group
+      button
+        flex: 1 1 50%
+
+    img
+      width: 100%
+      min-height: 800px
+      height: 800px
+      object-fit: cover
+
+    .owl-nav
+      width: 100%
+      display: flex
+      justify-content: space-between
+      @include center
+      padding: 0 30px
+
+      button
+        width: auto
+
+      img
+        width: auto
+        height: auto
+        min-height: auto
+
+    .owl-dots
+      @include center
+      top: calc(100% - 36px)
+      left: calc(50% + 8px)
+      display: flex
+
+      button
+        @include circle(18px, 1px, transparent)
+        background-color: $white
+        margin: 0 6px
+
+        &.active
+          background-color: $pink
+
+  &.accessories__service
+    .service__col
+      width: 82%
+      @include push--auto(0)
+
+      &__img
+        width: 100%
+        min-height: 210px
+
+      &__text
+        font-size: $font-size-Base
+        color: $main-color
+
+  &.choose_model
+    h2
+      color: $main-color
+      font-size: 55px
+      line-height: 64px
+  &.about_service
+    min-height: 860px
+    position: relative
+    @include background("../img/about.png")
+    padding: 160px 0 0 90px
+
+    .item__wrapper__box
+      max-width: 40%
+
+      h3
+        font-size: $font-size-small
+      input
+        display: none
+
+      button
+        width: auto
+        font-size: 20px
+        padding: 0 15px
+
+  &.reviews_section
+    .content
+      width: 69%
+      .owl-nav
+        .owl-prev
+          margin-left: -30px
+        .owl-next
+          margin-right: -30px

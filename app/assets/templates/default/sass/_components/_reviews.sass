@@ -1,0 +1,28 @@
+.card__box
+  width: 96%
+  @include push--auto(0)
+  border: 1px solid #C4C4C4
+  @include box-sizing(border-box)
+
+  &__img
+    img
+      min-height: 200px
+      object-fit: cover
+
+  &__text
+    padding: 30px 30px 20px 30px
+
+    h2
+      font-size: $font-size-small
+      line-height: 28px
+      color: $main-color
+    p
+      font-size: $font-size-Base
+      color: $main-color
+      max-height: 9em
+      overflow: hidden
+
+    h5, date
+      font-size: $font-size-Base
+      line-height: 21px
+      color: #1f1f1f

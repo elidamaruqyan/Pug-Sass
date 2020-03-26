@@ -1,0 +1,12 @@
+/* Flex Container */
+@mixin flexContainer($display, $justify, $align, $direction, $wrap)
+  display: $display
+  justify-content: $justify
+  align-items: $align
+  flex-direction: $direction
+  flex-wrap: $wrap
+
+/* Flex Item */
+@mixin flexItem($flexWidth)
+  flex: 1 1 $flexWidth
+  max-width: $flexWidth

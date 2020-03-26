@@ -1,0 +1,92 @@
+.prl-0
+  padding-right: 0
+  padding-left: 0
+
+.pl-50
+  padding-left: 50px
+
+.mtb-20
+  margin: 20px 0
+
+.mb-60
+  margin-bottom: 60px
+
+.m-0
+  margin: 0
+
+.p-0
+  padding: 0
+
+.pr-100
+  padding-right: 100px
+
+@for $i from 1 through ceil(205/5)
+  $value: ($i - 1) * 5
+  .mt-#{$value}
+    margin-top: #{$value}px
+  .mb-#{$value}
+    margin-bottom: #{$value}px
+  .pt-#{$value}
+    padding-top: #{$value}px
+  .pb-#{$value}
+    padding-bottom: #{$value}px
+
+.fw-300
+  font-weight: 300
+
+.fw-400
+  font-weight: 400
+
+.fw-500
+  font-weight: 500
+
+.fw-600
+  font-weight: 600
+
+.fw-700
+  font-weight: 700
+
+.w100
+  width: 100%
+
+.text-center
+  text-align: center
+
+.text-up
+  text-transform: uppercase
+
+.bg-c2c
+  background-color: $gray-outline-color
+  color: $white
+
+.bg-ece
+  background-color: #ececec
+  color: $main-color
+
+.bg-pink
+  @include alpha-attribute('background-color', rgba($pink, 0.9), $pink)
+  color: $white
+
+.bg-gray
+  @include alpha-attribute('background-color', rgba($main-color, 0.7), $main-color)
+  color: $white
+
+.bg-light-gray
+  background-color: #f4f4f4
+  color: $main-color
+
+.bg-white
+  background-color: white
+  color: $main-color
+
+.page-title
+  font-style: normal
+  font-size: $font-size-large
+  color: $main-color
+
+.flex-item
+  flex: 1 1 50%
+
+.fa-clock
+  &:before
+    content: '\f017'

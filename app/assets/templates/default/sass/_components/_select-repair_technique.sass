@@ -1,0 +1,17 @@
+.card__wrapper
+  height: 455px
+  position: relative
+
+  img
+    object-fit: cover
+
+  &__text
+    min-height: 55px
+    width: 100%
+    @include flexContainer(flex, flex-start, center, row, nowrap)
+    position: absolute
+    bottom: 0
+    @include truncate(100%)
+
+    p
+      font-size: 26px

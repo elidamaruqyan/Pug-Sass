@@ -1,0 +1,28 @@
+button
+  width: auto
+  height: $components-height
+  color: $btn-color
+  background-color: $btn-bg-color
+  border-radius: $border-radius-base
+  border: none
+  padding: 0 15px
+  cursor: pointer
+
+
+
+  &.outline
+    background-color: $white
+    color: $gray-outline-color
+    border: 1px solid $stroke-color
+
+  &.active
+    background-color: $pink
+    color: $white
+    transition: 800ms
+
+  &:hover, &:active
+    @extend .active
+
+  &:focus
+    outline: none
+    box-shadow: none

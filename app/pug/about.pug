@@ -1,0 +1,41 @@
+extends chunks/common/base/base
+
+block variables
+    - var pageTitle = 'Contact Page'
+
+block mainContent
+    .content
+        <!--================ About Banner Area Start =================-->
+        section.about__banner
+            .text__wrapper
+                h2.section__title.pb-20.fw-300.text-left О сервисном центре LG
+                p.fw-300.text-left Ремонтируем машины с любовью и знанием дела
+
+        <!--================ About Banner Area Start =================-->
+        <!--================ About Service Area Start =================-->
+        section.about__service.mb-70
+            .text__wrapper
+                h2.section__title.pb-40.fw-300.text-left Немного о сервисе
+                div.pb-30
+                    h6.pb-10.fw-600 Миссия центра
+                    p.fw-300 Быстро, компетентно и качественно производить ремонт устройств Miele
+
+                div.pb-30
+                    h6.pb-10.fw-600 Лучшие в своей сфере
+                    p.fw-300 Мы дорожим своей репутацией. Отзывы наших клиентов говорят сами за себя. Мы поможем вернуть Вашу технику в первозданный вид.
+
+                div.pb-30
+                    h6.pb-10.fw-600 Почему мы?
+                    p.fw-300 1. Работаем на результат 2. Дорожим репутацией 3. Опыт более 5 лет
+
+        <!--================ About Service Area End =================-->
+
+        <!--================ Our Specialists Area Start =================-->
+        section.our__specialists.mb-60
+            h2.section__title.pb-30.fw-300.text-center Наши специалисты
+            .content
+                include chunks/common/components/our-specialists
+
+        <!--================ Our Specialists Area End =================-->
+
+        include chunks/common/components/repeating-sectons

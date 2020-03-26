@@ -1,0 +1,60 @@
+section
+  &.contact__banner
+    min-height: 275px
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/contactUs.png") center no-repeat
+    background-size: cover
+    @include flexContainer(flex, center, center, row, nowrap)
+    color: white
+
+    h2
+      font-size: 55px
+      line-height: 64px
+
+  &.location__wrapper
+    height: 600px
+    margin: 47px 0 13px
+
+    img
+      object-fit: cover
+
+  &.contact__info
+    .additional__information
+      max-height: 360px
+      border: 1px solid #ddd
+      -webkit-box-sizing: border-box
+      box-sizing: border-box
+      border-radius: 10px
+      padding: 70px 80px 60px 40px
+      overflow: hidden
+
+      img
+        width: auto
+        height: auto
+
+    .info__wrapper
+      h4
+        font-size: 34px
+        line-height: 39px
+        color: $main-color
+
+      li
+        display: flex
+        margin-bottom: 25px
+
+        .icon__box
+          margin-right: 15px
+
+        .info__wrapper__text
+          p
+            font-size: $font-size-Base
+            color: $main-color
+            line-height: 23px
+
+          h5
+            font-size: 20px
+            color: $main-color
+            line-height: 23px
+
+    svg
+      path
+        fill: rgba(31, 31, 31, 0.3)

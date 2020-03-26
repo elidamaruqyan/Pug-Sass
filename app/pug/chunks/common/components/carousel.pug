@@ -1,0 +1,10 @@
+div#owl-demo.owl-carousel.owl-theme
+    -var i = 0;
+    while i <= 4
+        -i++;
+        -var imgAttr = {"src": getImage("/carousel/pic" + i +".jpg"), "alt": "carousel-img"+ i + ""}
+        div.item
+            .item__wrapper
+                img&attributes(imgAttr)
+
+                +text-wrap('Официальный сервисный центр LG', 'Скидка 20% от прайса по предварительной записи с сайта!','Номер телефона', 'Отправить', text__lg )

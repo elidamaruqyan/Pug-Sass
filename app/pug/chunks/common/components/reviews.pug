@@ -1,0 +1,14 @@
+div#owl-demo1.owl-carousel.owl-theme
+    -var i = 0;
+    while i <= 3
+        -i++;
+        -var imgAttr = {"src": getImage('/carousel/pic') + i +".jpg", "alt": "carousel-img"+ i + ""}
+        .card__box
+            .card__box__img
+                img&attributes(imgAttr)
+            .card__box__text
+                h2.text-left.fw-600.mb-10  Кофемашина CM5300 BRRT ежевичный красный
+                p.text-left.fw-30.mb-60 Просты в использовании, но легко ломаются при неправильной эспалуатации: в кофемолку и т.д. Своевременное обслуживание, предотвратит ремонт и некорректную работу.
+                .box
+                    h5.use__name.fw-600.m-0 Дмитрий
+                    date.date.fw-300.m-0 11.10.2019

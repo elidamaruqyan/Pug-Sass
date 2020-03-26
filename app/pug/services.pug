@@ -1,0 +1,18 @@
+extends chunks/common/base/base
+
+block variables
+    - var pageClass = 'p-blocks-ex'
+    - var pageTitle = 'Services Page'
+
+block mainContent
+    .content
+        <!--================ Service Area Start =================-->
+        section.services
+            .row
+                .col-md-12
+                    h2.page-title.text-center.fw-300.mt-50 Услуги
+                    h5.text-center.fw-300.mb-30 Выберите тип техники для ремонта
+                include chunks/common/components/select-repair_technique
+        <!--================ Service Area End =================-->
+
+        include chunks/common/components/repeating-sectons

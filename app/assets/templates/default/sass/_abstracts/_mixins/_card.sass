@@ -1,0 +1,51 @@
+.card__bg__
+  &1
+    @include background("../img/warr/pic1.png")
+  &2
+    @include background("../img/warr/pic2.png")
+  &3
+    @include background("../img/warr/pic3.png")
+
+.c-card
+  color: $white
+  max-height: 380px
+  min-height: 380px
+  min-width: 380px
+  overflow: hidden
+  padding-left: 30px
+  padding-right: 30px
+
+  .card__title
+    font-size: 24px
+    line-height: 28px
+    max-height: 86px
+    overflow: hidden
+
+  .card__desc
+    font-size: 16px
+    line-height: 19px
+    max-height: 136px
+    overflow: hidden
+
+
+.c-card-second
+  height: 250px
+  color: $white
+
+  .card__content
+    height: 100%
+    @include flexContainer(flex, flex-end, center, column, nowrap)
+
+    .card__title
+      font-size: 35px
+      line-height: 40px
+      max-height: 115px
+      overflow: hidden
+
+  &.card__bg__
+    &1
+      @include background("../img/warr/pic4.png")
+    &2
+      @include background("../img/warr/pic5.png")
+    &3
+      @include background("../img/warr/pic6.png")

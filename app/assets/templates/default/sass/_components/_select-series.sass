@@ -1,0 +1,25 @@
+.series__block
+  width: 91%
+  @include push--auto(10px)
+
+  &__img
+    width: 100%
+    min-height: 220px
+    margin-bottom: 5px
+
+    img
+      object-fit: cover
+
+  &__text
+    width: 100%
+    min-height: 70px
+    padding: 14px
+
+    p
+      max-height: 40px
+      font-weight: normal
+      font-size: $font-size-Base
+      line-height: 21px
+      color: $main-color
+      white-space: normal
+      @include truncate(100%)

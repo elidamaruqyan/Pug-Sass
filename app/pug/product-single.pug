@@ -1,0 +1,60 @@
+extends chunks/common/base/base
+
+block variables
+    - var pageTitle = 'Single Page'
+
+block mainContent
+    .content
+        <!--================ Filtered Products Info Area Start =================-->
+        section.filtered__products.pt-50
+            .content
+                .row
+                    .col-md-6
+                        .filtered__products__img.m-auto
+                            img(src=getImage("/productsPic.png"))
+                    .col-md-6
+                        .filtered__products__desc
+                            h4.text-left.fw-400.mb-30   Стиральная машина с функцией пара Steam LG F4H5VS6W
+                            ul
+                                li
+                                    .list__icon
+                                        img(src=getImage("/icons1.png"))
+                                    .list__descriptiom
+                                        p.fw-600  Бесплатная диагностика
+                                        h6.fw-300 Всего за 15 минут мастер выявит неисправность
+                                li
+                                    .list__icon
+                                        img(src=getImage("/icons2.png"))
+                                    .list__descriptiom
+                                        p.fw-600  Гарантия до 12 месяцев
+                                        h6.fw-300 Даем годовую гарантию на все услуги и запчасти
+                                li
+                                    .list__icon
+                                        img(src=getImage("/icons3.png"))
+                                    .list__descriptiom
+                                        p.fw-600  300 метров от метро
+                                        h6.fw-300 Мы рядом с метро вы быстро нас найдете
+                            .buttons__wrapper.mt-30
+                                button Записаться на ремонт
+                                button.outline Вызывать курьера бесплатно
+
+                        div.positioned__img
+                            img(src=getImage("/opacityBg.png"))
+
+        <!--================ Filtered Products Info Area End =================-->
+
+
+        <!--================ Filters Area Start =================-->
+
+        section.filters__wrapper.mb-20
+            .wrapper__content
+                .row
+                    .col-md-12
+                        h2.text-left.single-page-title.fw-400.mt-60.mb-35 Выберите проблему, которую надо решить
+                    include chunks/common/components/filters
+
+        <!--================ Filters Area End =================-->
+
+        include chunks/common/components/help
+
+        include chunks/common/components/repeating-sectons

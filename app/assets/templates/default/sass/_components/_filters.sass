@@ -1,0 +1,26 @@
+.wrapper__content
+  width: 80%
+  @include push--auto(0)
+
+.filters
+  &__item
+    min-height: 100px
+    @include flexContainer(flex, flex-start, center, row, nowrap)
+    background: $white
+    border: 1px solid $grayBorder
+    border-radius: $border-radius-small
+    margin: 10px 0
+    padding: 25px
+
+    &__circle
+      @include circle(50px, 2px, $pink)
+      margin-right: 15px
+      padding: 10px
+
+    &__text
+      p
+        font-size: $font-size-Base
+        line-height: normal
+
+      span
+        font-size: 16px

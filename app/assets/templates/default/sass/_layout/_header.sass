@@ -1,0 +1,62 @@
+header
+  position: relative
+
+  .container
+    max-width: 1277px
+
+    .navbar-brand
+      padding-left: 60px
+
+    .navbar-toggler
+      border: none
+      padding-right: 20px
+
+  .bg-c2c
+    height: 100px
+    padding-top: 37px
+    margin-bottom: 38px
+
+    ul
+      @include flexContainer(flex, space-between, center, row, nowrap)
+
+      li
+        padding-right: 20px
+        a
+          font-size: 22px
+          color: $white
+
+          &:hover
+            text-decoration: none
+
+      &.address-list
+        li
+          padding-right: 45px
+
+          &:last-child
+            padding-right: 0
+          p
+            font-weight: 300
+            font-size: $font-size-Base
+            line-height: 8px
+            color: #969696
+
+          span
+            font-size: $font-size-Base
+            line-height: 42px
+            color: #FFFFFF
+
+  .contacts-wrapper
+    height: 38px
+    width: 100%
+    position: absolute
+    bottom: -38px
+    z-index: 999
+    @include flexContainer(flex, flex-end, center, row, nowrap)
+    text-align: right
+
+    p
+      font-size: $font-size-Base
+
+      span.number
+        font-size: 22px
+        padding-left: 10px

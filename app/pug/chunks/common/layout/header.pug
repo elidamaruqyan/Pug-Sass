@@ -1,0 +1,28 @@
+<!--================ Header Area Start =================-->
+- var navigation = [{ link: 'about.html', text: 'О центре' }, { link: 'services.html', text: 'Услуги' }, { link: 'warranty.html', text: 'Гарантия' }, { link: 'contact.html', text: 'Контакты' } ]
+header
+    .bg-c2c
+        nav.navbar.navbar-expand-lg.p-0.navbar-dark
+            .container.p-0
+                a.navbar-brand.pt-0(href='index.html')
+                    img(src=getImage("/logo.png") alt="header-logo")
+                button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarSupportedContent.collapse.navbar-collapse
+                    ul.navbar-nav.mr-auto
+                        each item in navigation
+                            li.header-menu-item
+                                a.fw-300.header-menu-link(href=item.link) #{item.text}
+                    ul.nav.navbar-nav.address-list.m-0
+                        li
+                            p.m-0.p-0 Работаем с
+                            span с 9.00 до 21.00
+                        li
+                            p.m-0.p-0 Адрес
+                            span Санкт-Петербург Кирочная ул., 29
+    .contacts-wrapper.bg-pink.text-right
+        .container.p-0
+            p.m-0.fw-300 Рабочий номер:
+                span.number.fw-300 +7 (812) 407-13-68
+
+<!--================ Header Area End =================-->
