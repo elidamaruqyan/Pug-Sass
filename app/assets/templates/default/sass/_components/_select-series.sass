@@ -1,25 +1,21 @@
 .series__block
   width: 91%
   @include push--auto(10px)
+  color: $main-color
 
   &__img
     width: 100%
-    min-height: 220px
+    max-height: 220px
+    overflow: hidden
     margin-bottom: 5px
 
     img
       object-fit: cover
 
   &__text
-    width: 100%
-    min-height: 70px
+    max-height: 145px
     padding: 14px
+    overflow: hidden
 
     p
-      max-height: 40px
-      font-weight: normal
-      font-size: $font-size-Base
       line-height: 21px
-      color: $main-color
-      white-space: normal
-      @include truncate(100%)

@@ -6,12 +6,13 @@
     object-fit: cover
 
   &__text
-    min-height: 55px
+    height: 55px
     width: 100%
     @include flexContainer(flex, flex-start, center, row, nowrap)
     position: absolute
     bottom: 0
     @include truncate(100%)
 
-    p
-      font-size: 26px
+    h5
+      font-size: rem(26)
+      line-height: 30px

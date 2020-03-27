@@ -4,11 +4,10 @@ section
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/contactUs.png") center no-repeat
     background-size: cover
     @include flexContainer(flex, center, center, row, nowrap)
-    color: white
 
-    h2
-      font-size: 55px
+    h1
       line-height: 64px
+      color: white
 
   &.location__wrapper
     height: 600px
@@ -19,7 +18,6 @@ section
 
   &.contact__info
     .additional__information
-      max-height: 360px
       border: 1px solid #ddd
       -webkit-box-sizing: border-box
       box-sizing: border-box
@@ -32,13 +30,13 @@ section
         height: auto
 
     .info__wrapper
+
       h4
-        font-size: 34px
-        line-height: 39px
         color: $main-color
 
       li
         display: flex
+        align-items: center
         margin-bottom: 25px
 
         .icon__box
@@ -46,14 +44,10 @@ section
 
         .info__wrapper__text
           p
-            font-size: $font-size-Base
             color: $main-color
-            line-height: 23px
 
           h5
-            font-size: 20px
             color: $main-color
-            line-height: 23px
 
     svg
       path

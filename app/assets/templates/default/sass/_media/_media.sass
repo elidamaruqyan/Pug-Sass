@@ -1,40 +1,527 @@
+@media screen and (max-width: 768px) and (min-width: 320px)
+  .page-title-extra-large
+    font-size: rem($font-size-middle)
+    line-height: normal
+  //55
 
-/*==========  Desktop First  ==========*/
+  .page-title-large
+    font-style: normal
+    font-size: rem($font-size-extra-middle)
+  //45
 
-//// ≥1200px
-//+media-breakpoint-down(lg)
-//
-//// ≥992px
-//+media-breakpoint-down(md)
-//
-//// ≥768px
-//+media-breakpoint-down(sm)
-//
-//// ≥576px
-//+media-breakpoint-down(xs)
-//
-///*==========  Mobile First  ==========*/
-//
-//// ≤576px
-//+media-breakpoint-up(sm)
-//
-//// ≤768px
-//+media-breakpoint-up(md)
-//
-//// ≤992px
-//+media-breakpoint-up(lg)
-//
-//// ≤1200px
-//+media-breakpoint-up(xl)
+  .page-title-middle
+    font-size: rem($font-size-small)
+  //34
 
-@media screen and (max-width: 1400px)
+  .font-size-extra-middle
+    font-size: rem($font-size-small)
+  //29
+
+  .font-size-small
+    font-size: rem($font-size-Base)
+  //23
+
+  .paragraph-font-base
+    font-size: rem($font-size-extra-small)
+    margin-top: 10px
+  //18
+
+  .font-size-extra-small
+    font-size: rem($font-size-extra-small)
+  //16
+
+  .font-28
+    font-size: rem(17)
+
+  .font-22
+    font-size: rem($font-size-extra-small)
+
+  .font-20
+    font-size: rem(18)
+
+  .font-15
+    font-size: rem(15)
+
+  .font-70
+    font-size: rem($font-size-middle)
+
   .content
     width: 90%
-  .button__wrapper
-    flex-wrap: wrap
-  .wrapper__content
-    width: 80%
 
-  footer, section.newsletter__wrapper, section.choose__us
+  .c-card
+    max-height: inherit
+    min-height: auto
+    padding: 30px
+
+  button
+    font-size: rem($font-size-extra-small)
+    padding: 0 10px
+    width: 100%
+    margin: 5px auto
+
+  .input-group
+    flex-wrap: wrap
+
+  input
+    min-width: 100%
+
+  .filtered__products
+    .positioned__img
+      top: 0
+
+    &__desc
+      width: 100%
+      margin-top: 50px
+      padding: 0
+      .buttons__wrapper
+        button
+          padding: 0
+      .service__cost
+        padding: 15px
+
+    &__title
+      font-size: rem($font-size-small)
+
+    .close__btn__icon
+      left: 16px
+      top: 14px
+
+    .close__btn
+      height: 60px
+      width: 60px
+
+  .filters__item
+    padding: 10px
+
+  .help__wrapper__text
+    width: 90%
+
+  .help__wrapper
+    .help__title__font__size
+      font-size: rem($font-size-extra-middle)
+
+    .help__subtitle__font__size
+      font-size: rem($font-size-Base)
+
+  .carousel__section
+    .item__wrapper__box
+      width: 90%
+      left: 15px
+      text-align: center
+
+  .card__wrapper__text
+    h5
+      font-size: rem($font-size-Base)
+
+  header
+    .container
+      max-width: 90%
+
+      .navbar-toggler
+        width: auto
+        margin: 0
+
+        &:focus, &:active
+          background-color: unset
+          border: none
+
+    .bg-c2c
+      height: auto
+      padding: 20px
+
+      ul
+        flex-direction: column
+        align-items: flex-start
+
+        li
+          a
+            font-size: rem($font-size-extra-small)
+
+        &.address-list
+          padding-top: 15px
+
+          li
+            padding: 0
+            a
+              font-size: rem($font-size-extra-small)
+
+            span, p
+              line-height: normal
+
+  section
+
+    &.carousel__section
+      .owl-nav
+        padding: 0
+        display: none
+      .input-group
+        flex-wrap: wrap
+        button
+          flex: inherit
+          min-width: 100%
+          margin: 15px 0
+
+    &.accessories__service
+      .service__col
+        width: 80%
+        margin: 16px auto
+
+        &__img
+          min-height: auto
+
+    &.about_service
+      padding: 25px
+      min-height: auto
+      .item__wrapper__box
+        max-width: 100%
+        h4
+          font-size: rem($font-size-Base)
+        button
+          padding: 0 10px
+
+    &.reviews_section
+      .content
+        width: 95%
+        .owl-nav
+          .owl-next
+            margin-right: -17px
+          .owl-prev
+            margin-left: -17px
+
+    &.choose__us, &.newsletter__wrapper
+      .content
+        width: 90%
+
+    &.warranty__section
+      .warranty__section__text
+        width: 100%
+        padding: 25px
+
+    &.about__banner, &.warranty__banner, &.about__service
+      padding: 25px 25px 50px 25px
+      min-height: auto
+
+      h6
+        text-shadow: -2px 0px 5px #616060
+
+      .text__wrapper
+        max-width: 100%
+        width: 100%
+
+    &.contact__info
+      .additional__information
+        padding: 25px
+
+    &.location__wrapper
+      height: 300px
+
+    &.filters__wrapper
+      .button__wrapper
+        flex-wrap: wrap
+        button
+          margin: 10px auto
+      .wrapper__content
+        .single-page-title
+          font-size: rem($font-size-small)
+
+  footer
     .content
-      width: 80%
+      width: 90%
+
+    .footer__list
+      padding-right: 20px
+      &.footer__second__list
+        ul
+          max-height: inherit
+
+@media screen and (min-width: 769px) and (max-width: 992px)
+  .filters__item
+    padding: 10px
+    display: flex
+    flex-direction: column
+
+  .page-title-extra-large
+    font-size: rem($font-size-middle)
+    line-height: normal
+  //55
+
+  .page-title-large
+    font-style: normal
+    font-size: rem($font-size-extra-middle)
+  //45
+
+  .page-title-middle
+    font-size: rem($font-size-small)
+  //34
+
+  .font-size-extra-middle
+    font-size: rem($font-size-small)
+  //29
+
+  .font-size-small
+    font-size: rem($font-size-Base)
+  //23
+
+  .paragraph-font-base
+    font-size: rem($font-size-extra-small)
+    margin-top: 10px
+  //18
+
+  .font-size-extra-small
+    font-size: rem($font-size-extra-small)
+  //16
+
+  .font-28
+    font-size: rem(17)
+
+  .font-22
+    font-size: rem($font-size-extra-small)
+
+  .font-20
+    font-size: rem(18)
+
+  .font-15
+    font-size: rem(15)
+
+  .font-70
+    font-size: rem($font-size-middle)
+
+  .content
+    width: 90%
+
+  .c-card
+    max-height: inherit
+    min-height: auto
+    padding: 30px
+
+  button
+    font-size: rem($font-size-extra-small)
+    padding: 0 10px
+    width: auto
+    margin: 5px auto
+
+  .input-group
+    flex-wrap: nowrap
+
+  input
+    min-width: auto
+
+  .filtered__products
+    .positioned__img
+      top: 0
+
+    &__desc
+      width: 100%
+      margin-top: 50px
+      padding: 0
+      .buttons__wrapper
+        button
+          padding: 0
+      .service__cost
+        padding: 15px
+
+    &__title
+      font-size: rem($font-size-small)
+
+    .close__btn__icon
+      left: 16px
+      top: 14px
+
+    .close__btn
+      height: 60px
+      width: 60px
+
+  .filters__item
+    padding: 10px
+
+  .help__wrapper__text
+    width: 90%
+
+  .help__wrapper
+    .help__title__font__size
+      font-size: rem($font-size-extra-middle)
+
+    .help__subtitle__font__size
+      font-size: rem($font-size-Base)
+
+  .carousel__section
+    .item__wrapper__box
+      width: 90%
+      left: 15px
+      text-align: center
+
+  .card__wrapper__text
+    h5
+      font-size: rem($font-size-Base)
+
+  header
+    .container
+      max-width: 90%
+
+      .navbar-toggler
+        width: auto
+        margin: 0
+
+        &:focus, &:active
+          background-color: unset
+          border: none
+
+    .bg-c2c
+      height: auto
+      padding: 20px
+
+      ul
+        flex-direction: column
+        align-items: flex-start
+
+        li
+          a
+            font-size: rem($font-size-extra-small)
+
+        &.address-list
+          padding-top: 15px
+
+          li
+            padding: 0
+            a
+              font-size: rem($font-size-extra-small)
+
+            span, p
+              line-height: normal
+
+  section
+    &.carousel__section
+      .owl-nav
+        padding: 0
+        display: none
+      .input-group
+        flex-wrap: nowrap
+        button
+          flex: inherit
+          min-width: auto
+          margin: 15px 0
+
+    &.accessories__service
+      .service__col
+        width: 80%
+        margin: 16px auto
+
+        &__img
+          min-height: auto
+
+    &.about_service
+      padding: 25px
+      min-height: auto
+      .item__wrapper__box
+        max-width: 100%
+        h4
+          font-size: rem($font-size-Base)
+        button
+          padding: 0 10px
+
+    &.reviews_section
+      .content
+        width: 95%
+        .owl-nav
+          .owl-next
+            margin-right: -17px
+          .owl-prev
+            margin-left: -17px
+
+    &.choose__us, &.newsletter__wrapper
+      .content
+        width: 90%
+
+    &.warranty__section
+      .warranty__section__img
+        height: 100%
+        img
+          margin-right: -43px
+      .warranty__section__text
+        width: 100%
+        padding: 25px
+
+    &.about__banner, &.warranty__banner, &.about__service
+      padding: 25px 25px 50px 25px
+      min-height: auto
+
+      h6
+        text-shadow: -2px 0px 5px #616060
+
+      .text__wrapper
+        max-width: 100%
+        width: 100%
+
+    &.contact__info
+      .additional__information
+        padding: 25px
+
+    &.location__wrapper
+      height: 300px
+
+    &.filters__wrapper
+      .button__wrapper
+        flex-wrap: wrap
+        button
+          margin: 10px auto
+      .wrapper__content
+        .single-page-title
+          font-size: rem($font-size-small)
+
+  footer
+    .content
+      width: 90%
+
+    .footer__list
+      padding-right: 100px
+      &.footer__second__list
+        ul
+          max-height: inherit
+  .wrapper__content
+    width: 100%
+
+@media screen and (min-width: 992px) and (max-width: 1600px)
+  .wrapper__content
+    width: 100%
+
+  header
+    .container
+      max-width: 95%
+    .bg-c2c
+      ul
+        li
+          padding-right: 13px
+          a
+            font-size: rem($font-size-extra-small)
+        &.address-list
+          li
+            padding-right: 5px
+
+  .content
+    width: 90%
+
+  section
+    &.about_service
+      .item__wrapper__box
+        max-width: 70%
+    &.choose__us, &.newsletter__wrapper
+      .content
+        width: 80%
+    &.warranty__section
+      .warranty__section__img
+        height: 100%
+        img
+          width: 100%
+          margin-right: -70px
+    &.warranty__banner
+      .text__wrapper
+        width: 60%
+  footer
+    .content
+      width: 90%
+
+  .c-card
+    min-height: auto
+    max-height: inherit
+  .font-70
+    font-size: rem($font-size-extra-large)

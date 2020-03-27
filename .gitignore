@@ -1,0 +1,4 @@
+.history
+node_modules
+dest/assets/templates/default/sftp-config.json
+elements/sftp-config.json

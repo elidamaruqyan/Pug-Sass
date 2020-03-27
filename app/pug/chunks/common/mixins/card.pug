@@ -1,5 +1,5 @@
 //- @param info: { srcImg: string, title: string }
 mixin card(info)
     .card__content
-        h4.card__title.text-up.pb-10.fw-600 #{info.title}
-        p.card__desc.fw-600 #{info.desc}
+        h6.font-size-small.text-up.card__title.pb-10.fw-600 #{info.title}
+        span.font-size-extra-small.card__desc.fw-600 #{info.desc}

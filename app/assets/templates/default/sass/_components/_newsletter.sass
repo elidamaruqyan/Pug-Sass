@@ -1,6 +1,6 @@
 section
   &.newsletter__wrapper
-    min-height: 330px
+    //min-height: 330px
     background-image: linear-gradient(to right bottom, rgba(89, 89, 89, 0.8), rgba(89, 89, 89, 0.8)), url("../img/saleBg.png")
     background-size: cover
     background-repeat: no-repeat
@@ -10,20 +10,14 @@ section
     .content
       width: calc(100% - 638px)
 
-      .positioned__box
-        margin: 0 -82px
-
-        img
-          width: auto
-          height: auto
-
       .item__wrapper__box
         padding-top: 60px
 
-        h2
-          font-size: 40px
+        .newsletter__title__font__size
+          font-size: rem($font-size-large)
           line-height: 44px
-        h3
-          font-size: 20px
+
+        .newsletter__subtitle__font__size
+          font-size: rem($font-size-small)
           line-height: 34px
           margin: 10px 0 34px

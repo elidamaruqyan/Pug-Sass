@@ -4,19 +4,21 @@
   .content
     padding-bottom: 77px
     border-bottom: 1px solid #999
+
+
+  &__img
+    width: 68%
+
+
   &__desc
     width: 74%
     position: relative
     z-index: 999
     padding-left: 15px
 
-    h4
-      font-size: 32px
+    h5
       line-height: 37px
 
-    img
-      width: auto
-      height: auto
     li
       border-bottom: 1px solid #ddd
       display: flex
@@ -26,44 +28,38 @@
       .list__icon
         padding-right: 10px
 
+        img
+          width: auto
+          height: auto
+
       .list__descriptiom
         color: $main-color
         p
-          font-size: 15px
           line-height: 17px
           padding-bottom: 3px
 
           span
-            padding-left: 10px
-            font-size: 15px
+            padding-left: 12px
             line-height: 17px
 
-        h6
-          font-size: 15px
-          line-height: 17px
+
+    .service__cost
+      width: 100%
+      background: #f6f6f6
+      color: $main-color
+      border-radius: 4px
+      padding: 30px
+      margin-top: 30px
+
+      span
+        line-height: 19px
 
     .buttons__wrapper
       display: flex
       flex-direction: column
+
       button
         margin-bottom: 5px
-  &__img
-    width: 68%
-
-
-  .service__cost
-    width: 100%
-    background: #F6F6F6
-    border-radius: 4px
-    padding: 30px
-    color: $main-color
-
-    span
-      font-size: 16px
-      line-height: 19px
-    h3
-      font-size: 32px
-      line-height: 37px
 
   .positioned__img
     position: absolute
@@ -86,3 +82,11 @@
       position: absolute
       left: 26px
       top: 24px
+      transform: translate(-1px, 1px)
+
+
+.filtered__products__title
+  font-size: rem(32)
+
+.font-size-list-small
+  font-size: rem(15)

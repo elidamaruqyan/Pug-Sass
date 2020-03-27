@@ -7,8 +7,7 @@ html, body
   min-width: 320px
   margin: 0
   padding: 0
-  font-size: #{$font-size}px
-  font-family: $default-font
+  font-size: #{$font-size-Base}px
   overflow: auto
   overflow-x: hidden
   @include box-sizing(border-box)
@@ -53,10 +52,11 @@ ul
 
 ::placeholder
   color: #666
+  font-size: rem(20)
 
 ::selection
   background-color: $accent
-  color: #fff
+  color: $white
 
 .captcha-item
   transform: scale(0.75)

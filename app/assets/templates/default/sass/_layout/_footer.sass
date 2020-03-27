@@ -2,14 +2,13 @@ footer
   color: $white
 
   .content
-    width: calc(100% - 645px)
+    width: calc(100% - 580px)
 
     h6
-      font-size: $font-size-Base
       margin-bottom: 5px
       padding-left: 12px
+
     p
-      font-size: 22px
       line-height: 32px
 
     .circle
@@ -17,17 +16,15 @@ footer
       margin: 5px auto 20px
       padding: 7px
 
-
   .box
     align-items: flex-start
     justify-content: flex-start
 
-
   .footer__list
-    h4
-      font-size: $font-size-Base
+    h6
       line-height: 50px
       margin-bottom: 10px
+      padding: 0
 
     ul
       max-height: 223px
@@ -40,23 +37,20 @@ footer
       li
         a
           font-weight: normal
-          font-size: $font-size-Base
           line-height: 21px
           color: $white
 
       &.footer__list__items
         li
           padding-right: 70px
-      &.footer__second__list
-        width: 100%
-        ul
-          max-height: 180px
+    &.footer__second__list
+      width: 100%
+      flex: 1 1 50%
 
+      ul
+        max-height: 180px
 
   .copyright
     height: 70px
     @include flexContainer(flex, flex-start, center, row, nowrap)
     background: #595959
-
-    p
-      font-size: $font-size-Base

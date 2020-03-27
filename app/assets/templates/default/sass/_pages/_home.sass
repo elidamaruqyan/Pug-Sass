@@ -60,6 +60,8 @@ section
           background-color: $pink
 
   &.accessories__service
+    color: $main-color
+
     .service__col
       width: 82%
       @include push--auto(0)
@@ -68,15 +70,10 @@ section
         width: 100%
         min-height: 210px
 
-      &__text
-        font-size: $font-size-Base
-        color: $main-color
-
   &.choose_model
     h2
       color: $main-color
-      font-size: 55px
-      line-height: 64px
+
   &.about_service
     min-height: 860px
     position: relative
@@ -86,14 +83,14 @@ section
     .item__wrapper__box
       max-width: 40%
 
-      h3
-        font-size: $font-size-small
+      h4
+        font-size: rem($font-size-small)
+
       input
         display: none
 
       button
         width: auto
-        font-size: 20px
         padding: 0 15px
 
   &.reviews_section

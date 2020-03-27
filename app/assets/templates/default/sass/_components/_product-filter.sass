@@ -1,24 +1,18 @@
-section
-  &.help__wrapper
-    position: relative
-    min-height: 380px
-    background-color: #b6b3be
+.help__wrapper
+  background-color: #b6b3be
 
-    .help__wrapper_img
-      position: absolute
-      bottom: 0
-      top: 0
-      right: 0
+  &_img
+    height: 100%
+    img
+      object-fit: cover
 
-      img
-        object-fit: cover
+  &__text
+    width: 70%
+    @include push--auto(0)
 
-    .help__wrapper__text
-      .item__wrapper__box
-        width: 100%
-        h2
-          font-size: $font-size-large
-          margin-bottom: 15px
+  .help__title__font__size
+    font-size: rem($font-size-middle)
+    margin-bottom: 15px
 
-        h3
-          font-size: $font-size-small
+  .help__subtitle__font__size
+    font-size: rem($font-size-small)
